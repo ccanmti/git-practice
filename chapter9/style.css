@@ -16,7 +16,7 @@ header{
 /*メイン部*/
 main{
   width: 960px;
-  margin: 50px auto; /*上部のマージンを50px　横を*/
+  margin: 50px auto; /*上部のマージンを50px　横を自動*/
   display: flex;
 }
 
@@ -73,4 +73,34 @@ footer{
   width: 100%;
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width:768px){
+  
+  header{
+    width: 100%;
+  }
+  
+  main{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block; /*メイン内部を768px以下ではブロック要素に変更*/
+  }
+  
+  .big-box:nth-child(1){
+    width:100%;
+    margin: 50px auto 0px;
+  }
+  
+  .big-box:nth-child(2){
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .big-box:nth-child(3){
+    width: 100%;
+    margin: 20px auto 50px auto;
+  }
+  
 }
